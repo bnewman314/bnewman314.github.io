@@ -1,0 +1,154 @@
+<!doctype html>
+
+<html>
+<head>
+<title> hello burt </title>
+
+
+
+
+
+<!-- Note the style info below will only apply
+to this webpage itself.  Not to linked pages. Thats
+the purpose of a CSS file. THey apply to all the webpages
+on your website. without CSS files, even if you copied/pasted
+some styles to each webpage, what happens if you want ot change some parameter
+on every page.  -->
+
+<!-- <style type="text/css">
+  p { color: orange; font-family:arial; }
+</style> -->
+
+<!-- Also, if you place the styling above below the
+link to the css file below, it will override it for this webapge only. -->
+
+<link rel="stylesheet" type="text/css" href="burtscssfile.css" />
+
+<style type="text/css">
+  #abs_pos { border: 5px solid red;
+            position: absolute;
+            width: 150px;
+            height:75px;
+            top: 200px;
+            left: 600px;}
+  /* if you use 'relative' in place of 'absolute' above, it moves
+   the text relative to where the text would be with no formatting.
+    so if its ALREADY somewhere without hte style specified above,
+    then when you add hte style and use relative it will shift it relative
+    to where it currently is */
+</style>
+
+
+<style type="text/css">
+ /* cool style trick to ensure that all images fit on page */
+  img { max-height: 500px;
+            max-width: 500px;
+            }
+</style>
+
+
+
+
+</head>
+
+
+
+<body>
+
+
+Is there an easy way to see list of all attributes of a given html tag?
+like, if i type open bracket 'textarea' i want to see the attributes name, rows, cols, and options for those
+
+<hr />
+<h1> Biggest title</h1>
+<a href="#aboutsausage"> Go to text about sausages below <br /> </a>
+
+
+<a href="http://www.google.com" title="this is a popup title"> link to google  </a>
+<!-- maybe you need the popup title above to give peole info about where they are going brefore they go there  -->
+<h2>Second biggest title </h2>
+<p> This is a paragraph with a line break here <br /> now im on a new line </p>
+
+<!-- the below is measure from the top left corner of border i believe -->
+<div id="abs_pos"> I will specify exactly where I want htis text: 200px from the top,
+600px from the left;} </div>
+<p> <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /> </p>
+
+
+
+<p> Click the image below!!! </p>
+<a href="http://www.desmos.com"> <img src="graph.png"  height = "350"/> <a />
+
+
+
+
+
+
+  <h2> Different form types illustrated below. These are teh most popular ways that users can provide input. input types illustrated are: "text","radio", "checkbox", "button" and maybe others <br /></h2>
+
+How to we GET the form input for later use? how do we know what the user did?
+How do you know which eventhandlers are available for which tags?
+
+<!-- Does '<form>' actually do anything? -->
+<!-- <form> -->
+  whats your name: <input type="text" name="burt" value="write stuff here"/>
+<!-- </form> -->
+  <br />
+  <br />
+  <br />
+  Displayed_first_option: <input type="radio" name="id_for_these_options" value="label_for_first_option?">
+  Displayed_second_option:<input type="radio" name="id_for_these_options" value="label_for_second_option?">
+  <br />
+  <br />
+  Select the foods you wish to order (checkbox example): <br />
+  Bacon <input type="checkbox" name="food" value="bacon">
+  Ham   <input type="checkbox" name="food" value="ham">
+  steak <input type="checkbox" name="food" value="steak">
+
+  <br />
+  <br />
+
+The following illustrates event handlign with javascript! <br />
+<input type="button" value="click me Im a button" onClick="alert('javascript made this happen');"
+
+
+<br />
+<br />
+<br />
+<br />
+The below i guess is not so much considered 'user input' but it is considered
+a 'user selection'. not sure why they dont use same input notation for it.
+
+<br />
+<br />
+  <select name="name_for_this_dropdown_list">
+    <option value="guitar"> play the guitar </option>
+    <option value="dance"> dance</option>
+    <option value="jive"> jive</option>
+  </select>
+
+<br />
+<br />
+
+Below is a 'text area', which is like a multiline text input:
+<br /><br />
+
+<textarea name="autobiography">
+  Tell me about yourself
+</textarea>
+
+<br /><br />
+
+Here is another input type - files!: <br /><br />
+
+<input type="file" name="burtsfileinput"/>
+
+
+
+<p> <a name="aboutsausage" </a>
+I really like sausage, especiallly with meatballs and
+spaghetti sauce.
+ </p>
+
+</body>
+</html>
