@@ -1,5 +1,5 @@
 void setup() {
-  size(1240, 1060);
+  size(1280, 720);
   noStroke();
   colorMode(RGB, height, height, height);
   rectMode(CENTER);
