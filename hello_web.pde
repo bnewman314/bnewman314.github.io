@@ -1,12 +1,19 @@
-<!DOCTYPE html>
- 2 <html>
- 3 <head>
- 4     <title>Hello Web - Processing.js Test</title>
- 5     <script src="processing-1.0.0.min.js"></script>
- 6 </head>
- 7 <body>
- 8     <h1>Processing.js Test</h1>
- 9     <p>This is my first Processing.js web-based sketch:</p>
-10     <canvas data-processing-sources="hello-web.pde"></canvas>
-11 </body>
-12 </html>
+void setup() {
+  size(640, 360);
+  noStroke();
+  colorMode(RGB, height, height, height);
+  rectMode(CENTER);
+}
+
+void draw() {
+  background(0.0);
+
+  float r1 = map(mouseX, 0, width, 0, height);
+  float r2 = height-r1;
+
+  fill(r1);
+  rect(width/2 + r1/2, height/2, r1, r1);
+
+  fill(r2);
+  rect(width/2 - r2/2, height/2, r2, r2);
+}
